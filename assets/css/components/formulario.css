@@ -1,0 +1,13 @@
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border: 1px solid #e4e4e4;
+}
+
+.form-label {
+  font-size: 15px;
+}
+
+#area-visualizacao .botao-principal {
+  width: 100%;
+}

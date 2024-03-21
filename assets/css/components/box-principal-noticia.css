@@ -1,0 +1,141 @@
+.box-principal {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 11px 12px -4px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+  margin-bottom: 15px;
+}
+
+.box-principal .card-informacao {
+  display: flex;
+  padding: 5px 10px 10px 5px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box-principal .card-informacao .titulo-noticia {
+  font-size: 15px;
+  margin: 0px;
+}
+
+.box-principal .box-imagem img {
+  width: 170px;
+  height: 100%;
+  border-radius: 5px 0px 0px 5px;
+  margin-right: 5px;
+  object-fit: cover;
+  margin-right: 0px;
+}
+
+.box-principal:hover {
+  transform: scale(1.01);
+}
+
+.box-principal::before {
+  position: absolute;
+  display: flex;
+  border-radius: 5px;
+  margin: 0 auto;
+  content: '';
+  height: 100%;
+  width: 3px;
+  background-color: #800000;
+  top: 0px;
+  right: 0px;
+}
+
+@media (max-width: 1399.98px) {
+  .box-principal .box-imagem img {
+    width: 140px;
+  }
+
+  .box-principal .card-informacao .titulo-noticia {
+    font-size: 13px;
+  }
+
+  .categoria-noticia p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .box-principal .box-imagem img {
+    width: 200px;
+    height: 110px;
+  }
+
+  .noticias-principais {
+    margin-bottom: 50px;
+  }
+
+  .box-principal .card-informacao .titulo-noticia {
+    font-size: 15px;
+  }
+}
+
+@media(max-width: 1024px) {
+
+  .navbar-bottom a,
+  .navbar-bottom a:focus,
+  .navbar-bottom .dropdown ul a {
+    font-size: 10px;
+  }
+
+  .noticias-principais {
+    margin-bottom: 15px;
+  }
+}
+
+@media(max-width: 768px) {
+
+  .navbar-bottom a,
+  .navbar-bottom a:focus,
+  .navbar-bottom .dropdown ul a {
+    font-size: 13px;
+  }
+
+  .noticias-principais .box-noticia .imagem-noticia img,
+  .box-noticias-laterais .box-noticia .imagem-noticia img {
+    height: 360px;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .noticias-principais .box-noticia .imagem-noticia img,
+  .box-noticias-laterais .box-noticia .imagem-noticia img {
+    height: 250px;
+  }
+
+  .noticias-principais .box-noticia .titulo-noticia p {
+    font-size: 18px;
+  }
+
+  .noticias-principais .box-noticia .titulo-noticia {
+    padding: 12px 24px;
+  }
+
+  .box-principal .box-imagem img {
+    height: 110px;
+    width: 145px;
+  }
+
+  .box-principal .card-informacao .titulo-noticia {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 375px) {
+  .noticias-principais .box-noticia .titulo-noticia {
+    height: 115px;
+  }
+
+  .noticias-principais .box-noticia .imagem-noticia img,
+  .box-noticias-laterais .box-noticia .imagem-noticia img {
+    height: 220px;
+  }
+}

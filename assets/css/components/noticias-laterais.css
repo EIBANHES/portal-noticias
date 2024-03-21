@@ -1,0 +1,18 @@
+.categoria-noticia p {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 11px;
+  padding: 0px 5px;
+  color: #F9F9F9;
+  background-color: #400000;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .8);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.noticias-laterais a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}

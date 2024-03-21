@@ -1,0 +1,40 @@
+#area-classificados {
+  margin-bottom: 50px;
+}
+
+#area-classificados .botao-principal {
+  width: 100%;
+}
+
+#area-classificados .area-publicidade {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsividade */
+
+@media(max-width: 1199.98px) {
+  #area-classificados .card-config {
+    height: 180px;
+  }
+
+  #area-classificados .card-config .area-conteudo img {
+    height: 100px;
+  }
+
+  #area-classificados .card-config .titulo-noticia p {
+    font-size: 14px
+  }
+}
+
+@media(max-width: 991px) {
+  #area-classificados .botao-principal {
+    margin-bottom: 50px;
+  }
+
+  #area-classificados .card-config {
+    margin-bottom: 15px;
+  }
+}
+
+@media(max-width: 425px) {}

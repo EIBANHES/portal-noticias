@@ -1,0 +1,153 @@
+/* Anuncio */
+
+.area-publicidade {
+  margin-bottom: 50px;
+}
+
+.area-publicidade .area-banner {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.area-publicidade .area-banner .banner-desktop,
+.area-publicidade .area-banner .banner-mobile {
+  box-shadow: 0px 11px 12px -4px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.area-publicidade .area-banner .banner-mobile {
+  display: none;
+}
+
+/* Noticias em destaque */
+
+#noticias-destaque {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#noticias-destaque .noticias-principais a {
+  padding: 0;
+}
+
+/* Noticias regionais */
+
+#noticias-regionais {
+  margin-bottom: 50px;
+}
+
+#noticias-regionais .card-config {
+  margin-bottom: 15px;
+  height: 220px;
+}
+
+/* Noticias categoria */
+
+#noticias-categorias {
+  margin-bottom: 50px;
+}
+
+#noticias-categorias .card-config {
+  position: relative;
+  height: 260px;
+  margin-bottom: 50px;
+}
+
+.card-config:hover {
+  transform: scale(1.01);
+}
+
+.card-config .categoria-noticia {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+}
+
+#noticias-categorias .card-config .area-conteudo img {
+  height: 160px;
+  margin-bottom: 15px;
+}
+
+#noticias-categorias .titulo h4 {
+  color: #800000;
+}
+
+#noticias-categorias .noticias-principais a,
+#noticias-categorias .box-noticias-laterais a {
+  padding: 0;
+}
+
+/* Area vídeos */
+
+#area-videos {
+  margin-bottom: 50px;
+}
+
+/* Area anuncios */
+
+#area-anuncios {
+  margin-bottom: 50px;
+}
+
+/* Area colunistas */
+
+#area-colunistas {
+  margin-bottom: 50px;
+}
+
+/* Area Vitrine */
+
+#area-vitrine {
+  margin-bottom: 50px;
+}
+
+/* Responsividade */
+
+@media(max-width: 1199.98px) {
+  #noticias-categorias .card-config .area-conteudo img {
+    height: 105px;
+  }
+
+  #noticias-categorias .card-config .titulo-noticia p {
+    font-size: 15px;
+  }
+
+  #noticias-categorias .card-config {
+    height: 230px;
+  }
+}
+
+@media(max-width: 1024px) {
+  .card-config .categoria-noticia {
+    top: 13px;
+    left: 18px;
+  }
+
+  #noticias-categorias .card-config {
+    height: 205px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .area-publicidade .area-banner .banner-desktop {
+    display: none;
+  }
+
+  .area-publicidade .area-banner .banner-mobile {
+    display: block;
+  }
+}
+
+@media(max-width: 425px) {
+  .area-publicidade .area-banner img {
+    display: none;
+  }
+
+  #noticias-categorias .card-config .titulo-noticia p {
+    font-size: 13px;
+  }
+}
